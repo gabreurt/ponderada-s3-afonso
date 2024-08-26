@@ -1,5 +1,7 @@
-Query utilizada para criar a view:
+# Atividade Ponderada 3
 
+Query utilizada para criar a view:
+```
 CREATE OR REPLACE VIEW structured_data AS
 SELECT
     toDateTime(data_ingestao) AS data_ingestao,
@@ -14,4 +16,10 @@ SELECT
     toInt16(tag) AS ano
 FROM
     default.working_data;
+```
 
+## Print do DBEAVER:
+![Print do Dbeaver](dbeaver-print.PNG)
+
+## View do DBEAVER:
+![View](view-dbeaver.PNG)
